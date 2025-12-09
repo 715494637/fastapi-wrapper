@@ -1,0 +1,27 @@
+# FastAPI and web server
+fastapi~=0.115.0
+uvicorn[standard]~=0.32.0
+python-multipart~=0.0.12
+
+# Pydantic for settings and models
+pydantic~=2.12.2
+pydantic-settings~=2.7.0
+
+# HTTP client (already in gemini-webapi but listed for clarity)
+httpx~=0.28.1
+
+# Logging
+loguru~=0.7.3
+
+# Optional: Rate limiting
+# slowapi~=0.1.9
+
+# Optional: Authentication
+# python-jose[cryptography]~=3.3.0
+# passlib[bcrypt]~=1.7.4
+
+# Development dependencies
+# pytest~=8.3.0
+# pytest-asyncio~=0.24.0
+# black~=24.0.0
+# flake8~=7.1.0
