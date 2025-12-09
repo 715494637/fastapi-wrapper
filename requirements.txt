@@ -1,6 +1,6 @@
 # FastAPI and web server
 fastapi~=0.115.0
-uvicorn[standard]~=0.32.0
+uvicorn[standard]==0.32.1  # 改这里：从 ~=0.32.0 换成 ==0.32.1
 python-multipart~=0.0.12
 
 # Pydantic for settings and models
