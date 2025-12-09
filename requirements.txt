@@ -1,27 +1,18 @@
-# FastAPI and web server
-fastapi~=0.115.0
-uvicorn[standard]==0.32.1  # 改这里：从 ~=0.32.0 换成 ==0.32.1
-python-multipart~=0.0.12
+# FastAPI and web server - 升级到最新稳定版
+fastapi==0.115.13  # 具体版本号，避免 ~=
+uvicorn[standard]==0.34.0
+python-multipart==0.0.19
 
-# Pydantic for settings and models
-pydantic~=2.12.2
-pydantic-settings~=2.7.0
+# Pydantic - 升级到最新兼容版本
+pydantic==2.12.5
+pydantic-settings==2.10.0
 
-# HTTP client (already in gemini-webapi but listed for clarity)
-httpx~=0.28.1
+# HTTP client
+httpx==0.28.1
 
 # Logging
-loguru~=0.7.3
+loguru==0.7.3
 
-# Optional: Rate limiting
-# slowapi~=0.1.9
-
-# Optional: Authentication
-# python-jose[cryptography]~=3.3.0
-# passlib[bcrypt]~=1.7.4
-
-# Development dependencies
-# pytest~=8.3.0
-# pytest-asyncio~=0.24.0
-# black~=24.0.0
-# flake8~=7.1.0
+# Vercel specific dependencies
+# Note: Vercel automatically includes many packages, but some may need explicit listing
+# starlette>=0.37.0  # Usually included with FastAPI, but listing for clarity
